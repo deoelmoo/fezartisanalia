@@ -1,47 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
   <url>
-    <loc>https://deoelmoo.github.io/</loc>
+    <loc>https://www.etsy.com/listing/1802903156/keroppi-birthday-shirt-keroppi-its-my</loc>
     <image:image>
-      <image:loc>https://deoelmoo.github.io/custom-baby-pony-shirt-with-name-girls.jpg</image:loc>
-      <image:title>Custom Baby Pony Shirt with Name for Girls – Toddler Farm Animal Tee</image:title>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/cute-keroppi-its-my-birthday-tee.jpg</image:loc>
+      <image:title>Keroppi Birthday Shirt</image:title>
+      <image:caption>Cute frog birthday shirt for kids party - Sanrio Keroppi tee</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://deoelmoo.github.io/pony-birthday-shirt-personalized-toddler-gift.jpg</image:loc>
-      <image:title>Pony Birthday Shirt for Toddlers – Personalized Horse T-Shirt Gift</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/cute-keroppi-its-my-birthday-tee.jpg</image:loc>
-      <image:title>Cute Keroppi It’s My Birthday Shirt – Fun Frog Party T-Shirt for Kids</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/keroppi-birthday-shirt-frog-party-kids.jpg</image:loc>
-      <image:title>Keroppi Birthday Shirt – Sanrio Frog Party Tee for Kids</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/vintage-alien-1979-xenomorph-horror-shirt.jpg</image:loc>
-      <image:title>Vintage Alien 1979 Xenomorph Horror T-Shirt – Retro Sci-Fi Tee</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/alien-lover-retro-sci-fi-tee.jpg</image:loc>
-      <image:title>Alien Lover Gift Tee – Classic 1979 Horror Movie Shirt</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/flamingo-last-day-teacher-school-year-shirt.jpg</image:loc>
-      <image:title>Last Day of School Shirt for Teachers – Cute Flamingo Tee</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/funny-summer-teacher-vacation-tee.jpg</image:loc>
-      <image:title>Funny Summer Teacher Shirt – End of Year Vacation T-Shirt</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/metalcore-drummer-concert-shirt.jpg</image:loc>
-      <image:title>Metalcore Drummer Concert Shirt – Vintage Rock Band Tee</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://deoelmoo.github.io/retro-metalcore-band-women-tee.jpg</image:loc>
-      <image:title>Retro Metalcore Band T-Shirt – Grunge Music Apparel</image:title>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/keroppi-birthday-shirt-frog-party-kids.jpg</image:loc>
+      <image:title>Frog Party Keroppi Shirt</image:title>
+      <image:caption>Keroppi It's My Birthday shirt for boys and girls - fun kids gift</image:caption>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://www.etsy.com/listing/4296907570/personalized-baby-pony-shirt-for-girls</loc>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/pony-birthday-shirt-personalized-toddler-gift.jpg</image:loc>
+      <image:title>Personalized Pony Shirt</image:title>
+      <image:caption>Custom baby pony shirt for toddler girls - horse lover gift</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/custom-baby-pony-shirt-with-name-girls.jpg</image:loc>
+      <image:title>Custom Name Horse Tee</image:title>
+      <image:caption>Farm animal birthday tee with custom name - perfect pony outfit</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.etsy.com/listing/4303622739/funny-summer-teacher-shirt-end-of-year</loc>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/funny-summer-teacher-vacation-tee.jpg</image:loc>
+      <image:title>Summer Teacher Shirt</image:title>
+      <image:caption>Funny end of year gift for teachers - summer vacation t-shirt</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/flamingo-last-day-teacher-school-year-shirt.jpg</image:loc>
+      <image:title>Last Day of School Shirt</image:title>
+      <image:caption>Flamingo tee for teachers - end of school year celebration shirt</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.etsy.com/listing/1878789603/vintage-alien-1979-t-shirt-retro-sci-fi</loc>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/alien-lover-retro-sci-fi-tee.jpg</image:loc>
+      <image:title>Alien Lover Sci-Fi Tee</image:title>
+      <image:caption>Retro horror movie shirt for fans of Alien (1979)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/vintage-alien-1979-xenomorph-horror-shirt.jpg</image:loc>
+      <image:title>Vintage Alien Xenomorph Tee</image:title>
+      <image:caption>Classic sci-fi horror t-shirt with xenomorph - 1979 movie merch</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.etsy.com/listing/4303934824/metalcore-tshirt-drummer-shirt-metalcore</loc>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/metalcore-drummer-concert-shirt.jpg</image:loc>
+      <image:title>Metalcore Drummer Shirt</image:title>
+      <image:caption>Vintage metalcore band tee - perfect for concert lovers and drummers</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deoelmoo.github.io/fezartisanalia/retro-metalcore-band-women-tee.jpg</image:loc>
+      <image:title>Retro Metalcore Shirt</image:title>
+      <image:caption>Grunge style t-shirt for metalcore fans - unisex concert wear</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
