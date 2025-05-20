@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vintage Alien T-Shirts</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00ff88;
+      margin-bottom: 40px;
+    }
+
+    .product-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .product-images a {
+      width: 48%;
+      max-width: 400px;
+      transition: transform 0.3s;
+    }
+
+    .product-images a:hover {
+      transform: scale(1.05);
+    }
+
+    .product-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #00ff88;
+    }
+
+    @media (max-width: 768px) {
+      .product-images {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-images a {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 Vintage Alien 1979 T-Shirts 🔥</h1>
+
+  <div class="product-images">
+    <a href="https://www.etsy.com/listing/1878789603/vintage-alien-1979-t-shirt-retro-sci-fi" target="_blank">
+      <img src="https://i.etsystatic.com/42137183/r/il/e0337f/6668029920/il_794xN.6668029920_38dw.jpg" alt="Alien T-Shirt 1" />
+    </a>
+    <a href="https://www.etsy.com/listing/1881815159/vintage-alien-1979-t-shirt-retro-sci-fi" target="_blank">
+      <img src="https://i.etsystatic.com/42137183/r/il/b8de2a/6731182901/il_794xN.6731182901_i6s0.jpg" alt="Alien T-Shirt 2" />
+    </a>
+  </div>
+
+</body>
+</html>
