@@ -2,53 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vintage Alien T-Shirts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vintage Alien 1979 T-Shirts</title>
   <style>
     body {
       background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
       padding: 20px;
+      text-align: center;
     }
 
     h1 {
       color: #00ff88;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      font-size: 2.8rem;
+    }
+
+    h2 {
+      color: #00ff88;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    ul {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      padding-left: 0;
+      list-style: none;
+      color: #00ff88;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    ul li::before {
+      content: '🔥';
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
     .product-images {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 40px;
       flex-wrap: wrap;
+      margin-bottom: 50px;
     }
 
-    .product-images a {
-      width: 48%;
-      max-width: 400px;
-      transition: transform 0.3s;
-    }
-
-    .product-images a:hover {
-      transform: scale(1.05);
-    }
-
-    .product-images img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+    .product-card {
+      background-color: #111;
       border: 2px solid #00ff88;
+      border-radius: 12px;
+      width: 300px;
+      padding: 15px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px #00ff88aa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
     }
 
-    @media (max-width: 768px) {
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ff88ff;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .btn-etsy {
+      display: inline-block;
+      background-color: #00ff88;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-etsy:hover {
+      background-color: #00cc6a;
+      color: #fff;
+    }
+
+    @media (max-width: 700px) {
       .product-images {
         flex-direction: column;
-        align-items: center;
+        gap: 30px;
       }
-
-      .product-images a {
+      .product-card {
         width: 90%;
       }
     }
@@ -63,20 +128,22 @@
   <p>Dive into the cult universe of science fiction with our t-shirts inspired by the film Alien (1979). These designs are a must-have for all fans of Xenomorphs, retro cinema, and classic horror genre. Featuring an exclusive design and ethical manufacturing, they offer ultimate comfort while paying tribute to one of the most iconic monsters in cinema.</p>
 
   <ul>
-    <li>🎨 Design inspired by the cult 1979 film</li>
-    <li>👕 Ultra-comfortable unisex t-shirt made of 100% ring-spun cotton</li>
-    <li>🌱 Ethically and eco-responsibly produced</li>
-    <li>📏 Available sizes: S to 3XL</li>
-    <li>🎁 The perfect gift for cinema enthusiasts</li>
+    <li>Design inspired by the cult 1979 film</li>
+    <li>Ultra-comfortable unisex t-shirt made of 100% ring-spun cotton</li>
+    <li>Ethically and eco-responsibly produced</li>
+    <li>Available sizes: S to 3XL</li>
+    <li>The perfect gift for cinema enthusiasts</li>
   </ul>
 
   <div class="product-images">
-    <a href="https://www.etsy.com/listing/1878789603/vintage-alien-1979-t-shirt-retro-sci-fi" target="_blank">
+    <div class="product-card">
       <img src="https://i.etsystatic.com/42137183/r/il/e0337f/6668029920/il_794xN.6668029920_38dw.jpg" alt="Alien T-Shirt 1" />
-    </a>
-    <a href="https://www.etsy.com/listing/1881815159/vintage-alien-1979-t-shirt-retro-sci-fi" target="_blank">
+      <a href="https://www.etsy.com/listing/1878789603/vintage-alien-1979-t-shirt-retro-sci-fi" target="_blank" rel="noopener noreferrer" class="btn-etsy">Visit Our Etsy Shop</a>
+    </div>
+    <div class="product-card">
       <img src="https://i.etsystatic.com/42137183/r/il/b8de2a/6731182901/il_794xN.6731182901_i6s0.jpg" alt="Alien T-Shirt 2" />
-    </a>
+      <a href="https://www.etsy.com/listing/1881815159/vintage-alien-1979-t-shirt-retro-sci-fi" target="_blank" rel="noopener noreferrer" class="btn-etsy">Visit Our Etsy Shop</a>
+    </div>
   </div>
 
 </body>
