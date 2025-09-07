@@ -10,12 +10,9 @@
     *{box-sizing:border-box}
     html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     .wrap{max-width:980px;margin:0 auto;padding:16px}
-    /* HERO (gradient; add an image later by uncommenting the <img>) */
-    .hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden;background:linear-gradient(120deg,#dbeafe,#f0f9ff);height:220px}
-    /* To use a hero photo, upload hero-pickleball.webp next to this page and uncomment:
+    /* HERO */
+    .hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden;background:linear-gradient(120deg,#dbeafe,#f0f9ff)}
     .hero img{width:100%;height:220px;object-fit:cover;display:block}
-    <img src="hero-pickleball.webp" alt="Pickleball courts in Hilton Head Island">
-    */
     .hero .title{position:absolute;left:16px;bottom:12px;background:rgba(255,255,255,.85);padding:8px 12px;border-radius:10px;font-weight:700;color:#0b122a}
     h1{font-size:1.35rem;margin:14px 0 6px}
     .sub{color:var(--muted);margin:0 0 16px}
@@ -38,7 +35,11 @@
 </head>
 <body>
 
+  <!-- HERO with image -->
   <header class="hero">
+    <img src="pickleball-courts-hilton-head-hero.webp"
+         alt="Outdoor pickleball courts on Hilton Head Island"
+         width="1600" height="600" loading="lazy">
     <div class="title">Pickleball — Hilton Head Island, SC</div>
   </header>
 
@@ -55,7 +56,7 @@
         <div class="actions">
           <a class="btn primary" href="https://maps.google.com/?q=6+Trent+Jones+Ln,+Hilton+Head+Island,+SC+29928" target="_blank" rel="noopener">Google Maps</a>
           <a class="btn ghost" href="https://www.palmettodunes.com/things-to-do/pickleball" target="_blank" rel="noopener">Official info</a>
-          <a class="btn ok" href="tel:+18435939106">Call: 843-593-9106</a>
+          <a class="btn ok" href="tel:+18558593671">Call: 855-859-3671</a>
         </div>
       </article>
 
