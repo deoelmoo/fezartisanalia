@@ -1,18 +1,136 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pickleball courts — city list</title>
-<meta name="description" content="Find pickleball courts by city.">
-</head><body>
-<h1>Find pickleball courts by city</h1>
-<ul>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/new-york-ny-pickleball-courts.html">New York City, NY</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/chicago-il-pickleball-courts.html">Chicago, IL</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/dallas-fort-worth-tx-pickleball-courts.html">Dallas–Fort Worth, TX</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/north-charleston-sc-pickleball-courts.html">North Charleston, SC</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/mount-pleasant-sc-pickleball-courts.html">Mount Pleasant, SC</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/hilton-head-island-pickleball.html">Hilton Head Island, SC</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/katy-pickleball-court.html">Katy, TX</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/troy-mi-pickleball-courts.html">Troy, MI</a></li>
-  <li><a href="https://deoelmoo.github.io/fezartisanalia/minnetonka-pickleball.html">Minnetonka, MN</a></li>
-</ul>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Find Pickleball Courts by City</title>
+  <meta name="description" content="Browse pickleball courts by city across the US. Quick links to maps, official info, and phone numbers." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#475569; --card:#f8fafc; --line:#e2e8f0; --brand:#2563eb; --ok:#10b981; --accent:#0ea5e9;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+
+    /* HERO */
+    .hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden;background:linear-gradient(120deg,#dbeafe,#f0f9ff)}
+    .hero img{width:100%;height:240px;object-fit:cover;display:block}
+    .hero .title{position:absolute;left:16px;bottom:14px;background:rgba(255,255,255,.9);padding:10px 14px;border-radius:12px;font-weight:800;color:#0b122a;font-size:1.2rem}
+
+    .wrap{max-width:1000px;margin:0 auto;padding:18px}
+    h1{font-size:1.35rem;margin:14px 0 6px}
+    p.sub{color:var(--muted);margin:0 0 16px}
+
+    /* Search */
+    .search{display:flex;gap:10px;align-items:center;margin:8px 0 16px}
+    .search input{
+      flex:1; padding:12px 14px; border:1.5px solid var(--line); border-radius:12px; font-size:1rem; outline:none;
+    }
+    .search input:focus{border-color:#93c5fd; box-shadow:0 0 0 4px #dbeafe}
+
+    /* Grid */
+    .grid{display:grid;gap:14px}
+    @media(min-width:720px){.grid{grid-template-columns:1fr 1fr 1fr}}
+    .card{
+      background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px; box-shadow:0 1px 3px rgba(2,6,23,.06);
+      display:flex; flex-direction:column; gap:8px;
+    }
+    .card h2{font-size:1.02rem; margin:0}
+    .muted{color:var(--muted); font-size:.92rem}
+    .actions{margin-top:6px; display:flex; gap:8px; flex-wrap:wrap}
+    .btn{display:inline-block; text-decoration:none; font-weight:700; border-radius:10px; padding:9px 11px}
+    .btn.primary{background:var(--accent); color:#fff}
+    .btn.ghost{background:#fff; color:#1e40af; border:2px solid #2563eb}
+    .foot{color:var(--muted); font-size:.9rem; margin-top:20px}
+  </style>
+</head>
+<body>
+
+  <!-- HERO (même image que tes pages ville) -->
+  <header class="hero">
+    <img src="pickleball-courts-hilton-head-hero.webp"
+         alt="Pickleball courts"
+         width="1600" height="600" loading="lazy">
+    <div class="title">Find pickleball courts by city</div>
+  </header>
+
+  <div class="wrap">
+    <p class="sub">Choose a city below. Use the search to filter.</p>
+
+    <!-- Search -->
+    <div class="search" role="search">
+      <input id="q" type="search" placeholder="Search city or state (e.g., Chicago, SC, Dallas)…" aria-label="Search cities">
+    </div>
+
+    <!-- Cities grid -->
+    <section class="grid" id="cities" aria-label="Cities">
+      <!-- One card per city -->
+      <article class="card" data-keywords="new york ny nyc">
+        <h2>New York City, NY</h2>
+        <div class="muted">Indoor & outdoor courts across NYC</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/new-york-ny-pickleball-courts.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="chicago il">
+        <h2>Chicago, IL</h2>
+        <div class="muted">Public parks & private clubs</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/chicago-il-pickleball-courts.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="dallas fort worth dfw texas tx">
+        <h2>Dallas–Fort Worth, TX</h2>
+        <div class="muted">Large metro: indoor & outdoor</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/dallas-fort-worth-tx-pickleball-courts.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="north charleston sc south carolina">
+        <h2>North Charleston, SC</h2>
+        <div class="muted">City facilities & private courts</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/north-charleston-sc-pickleball-courts.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="mount pleasant sc south carolina">
+        <h2>Mount Pleasant, SC</h2>
+        <div class="muted">Indoor clubs + Park West Gym</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/mount-pleasant-sc-pickleball-courts.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="hilton head island sc south carolina">
+        <h2>Hilton Head Island, SC</h2>
+        <div class="muted">Resorts & public parks</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/hilton-head-island-pickleball.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="katy tx texas">
+        <h2>Katy, TX</h2>
+        <div class="muted">Indoor clubs & community courts</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/katy-pickleball-court.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="troy mi michigan">
+        <h2>Troy, MI</h2>
+        <div class="muted">City center + parks</div>
+        <div class="actions">
+          <a class="btn primary" href="https://deoelmoo.github.io/fezartisanalia/troy-mi-pickleball-courts.html">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-keywords="minnetonka mn minnesota">
+        <h2>Minnetonka, MN</h2>
+        <div class="muted">Indoor & outdoor (Tonka area)</div>
+        <div class="actions">
+
