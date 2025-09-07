@@ -3,34 +3,72 @@
 <head>
   <meta charset="utf-8" />
   <title>Find Pickleball Courts by City (9)</title>
-  <meta name="description" content="Quick links to 9 pickleball city pages." />
+  <meta name="description" content="Quick links to 9 pickleball city pages. Click a city to open its guide." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    :root{--bg:#fff;--text:#0f172a;--muted:#475569;--card:#f8fafc;--line:#e2e8f0}
-    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    :root{--bg:#fff;--text:#0f172a;--muted:#475569;--line:#e2e8f0;--card:#f8fafc;--accent:#0ea5e9}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     .wrap{max-width:900px;margin:0 auto;padding:20px}
-    h1{font-size:1.4rem;margin:0 0 14px}
-    ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
-    @media(min-width:700px){ul{grid-template-columns:1fr 1fr}}
-    li a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);text-decoration:none;color:inherit;font-weight:700}
-    .foot{margin-top:18px;color:var(--muted);font-size:.9rem}
+    h1{font-size:1.4rem;margin:0 0 6px}
+    .sub{color:var(--muted);margin:0 0 16px}
+
+    /* Grid of fully clickable tiles */
+    .grid{display:grid;gap:12px}
+    @media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+    .tile{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; padding:14px 16px; border:1.5px solid var(--line); border-radius:14px;
+      background:var(--card); text-decoration:none; color:inherit; font-weight:700; cursor:pointer;
+      transition: border-color .15s, box-shadow .15s, transform .05s;
+    }
+    .tile:hover{border-color:#93c5fd; box-shadow:0 2px 10px rgba(2,6,23,.08)}
+    .tile:active{transform:scale(.995)}
+    .tile:focus{outline:none; box-shadow:0 0 0 4px #dbeafe}
+    .city{font-size:1rem}
+    .open{
+      display:inline-flex; align-items:center; gap:6px; font-weight:800;
+      padding:8px 10px; border-radius:10px; border:2px solid var(--accent); color:#1e40af; background:#fff;
+    }
+    .open i{font-style:normal; font-weight:900}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Find pickleball courts by city — 9 pages</h1>
-    <ul>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/new-york-ny-pickleball-courts.html">New York City, NY</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/chicago-il-pickleball-courts.html">Chicago, IL</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/dallas-fort-worth-tx-pickleball-courts.html">Dallas–Fort Worth, TX</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/north-charleston-sc-pickleball-courts.html">North Charleston, SC</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/mount-pleasant-sc-pickleball-courts.html">Mount Pleasant, SC</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/hilton-head-island-pickleball.html">Hilton Head Island, SC</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/katy-pickleball-court.html">Katy, TX</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/troy-mi-pickleball-courts.html">Troy, MI</a></li>
-      <li><a href="https://deoelmoo.github.io/fezartisanalia/minnetonka-pickleball.html">Minnetonka, MN</a></li>
-    </ul>
-    <p class="foot">Updated: 2025-09-07</p>
+    <h1>Find pickleball courts by city</h1>
+    <p class="sub">Click a city to open its guide.</p>
+
+    <div class="grid" role="list">
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/new-york-ny-pickleball-courts.html" aria-label="Open New York City, NY">
+        <span class="city">New York City, NY</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/chicago-il-pickleball-courts.html" aria-label="Open Chicago, IL">
+        <span class="city">Chicago, IL</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/dallas-fort-worth-tx-pickleball-courts.html" aria-label="Open Dallas–Fort Worth, TX">
+        <span class="city">Dallas–Fort Worth, TX</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/north-charleston-sc-pickleball-courts.html" aria-label="Open North Charleston, SC">
+        <span class="city">North Charleston, SC</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/mount-pleasant-sc-pickleball-courts.html" aria-label="Open Mount Pleasant, SC">
+        <span class="city">Mount Pleasant, SC</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/hilton-head-island-pickleball.html" aria-label="Open Hilton Head Island, SC">
+        <span class="city">Hilton Head Island, SC</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/katy-pickleball-court.html" aria-label="Open Katy, TX">
+        <span class="city">Katy, TX</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/troy-mi-pickleball-courts.html" aria-label="Open Troy, MI">
+        <span class="city">Troy, MI</span><span class="open">Open <i>→</i></span>
+      </a>
+      <a class="tile" role="listitem" href="https://deoelmoo.github.io/fezartisanalia/minnetonka-pickleball.html" aria-label="Open Minnetonka, MN">
+        <span class="city">Minnetonka, MN</span><span class="open">Open <i>→</i></span>
+      </a>
+    </div>
+
+    <p class="foot" style="color:#475569;margin-top:18px">Updated: 2025-09-07</p>
   </div>
 </body>
 </html>
